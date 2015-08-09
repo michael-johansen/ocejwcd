@@ -18,7 +18,7 @@ public class SessionServlet extends HttpServlet {
     protected void doGet(
             HttpServletRequest httpServletRequest,
             HttpServletResponse httpServletResponse) throws ServletException, IOException {
-        httpServletRequest.getRequestDispatcher("/session.jsp").include(httpServletRequest, httpServletResponse);
+        httpServletRequest.getRequestDispatcher("/sessions.jsp").include(httpServletRequest, httpServletResponse);
     }
 
     @Override
