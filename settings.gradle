@@ -1,0 +1,8 @@
+rootProject.name = 'ocejwcd'
+include 'security'
+include 'frontcontroller'
+include 'session'
+include 'api-servlet'
+include 'events'
+include 'taglibs'
+
