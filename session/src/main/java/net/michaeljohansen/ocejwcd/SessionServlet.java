@@ -19,6 +19,11 @@ public class SessionServlet extends HttpServlet {
             HttpServletRequest httpServletRequest,
             HttpServletResponse httpServletResponse) throws ServletException, IOException {
         httpServletRequest.getRequestDispatcher("/sessions.jsp").include(httpServletRequest, httpServletResponse);
+
+        getServletContext().getInitParameter("test"); // context parameter
+        getServletConfig().getInitParameter("test");  // servlet parameter
+        getInitParameter("test");                     // servlet parameter
+
     }
 
     @Override
